@@ -75,8 +75,6 @@ function init() {
 
   document.addEventListener("keypress", keyPressed, true);
 
-  //	currentblocks[0] = {x: 0, y: 0, color: random_color()};
-  //	currentblocks[1] = {x: 1, y: 0, color: random_color()};
   generate_block();
 
   draw();
@@ -131,24 +129,7 @@ function canvasExample() {
 }
 
 function keyPressed(e) {
-  //	board[currentblocks[0].x][currentblocks[0].y] = 'black';
-  //	board[currentblocks[1].x][currentblocks[1].y] = 'black';
-
   console.log(e.charCode);
-  //	switch (e.keyCode) {
-  //		case KeyEvent.DOM_VK_UP:
-  //			currentblocks[0].y++;
-  //			break;
-  //		case KeyEvent.DOM_VK_DOWN:
-  //			currentblocks[0].y--;
-  //			break;
-  //		case KeyEvent.DOM_VK_LEFT:
-  //			currentblocks[0].x++;
-  //			break;
-  //		case KeyEvent.DOM_VK_RIGHT:
-  //			currentblocks[0].x++;
-  //			break;
-  //	}
 
   switch (e.charCode) {
     case "k":
@@ -264,8 +245,6 @@ function keyPressed(e) {
     currentblocks[1].y--;
   }
 
-  //	board[currentblocks[0].x][currentblocks[0].y] = 'white';
-  //	board[currentblocks[1].x][currentblocks[1].y] = 'white';
   draw();
 }
 
